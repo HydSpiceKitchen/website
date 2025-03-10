@@ -3,108 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyd Spice Kitchen</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('./Frame 7.png') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
-        header {
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem 0;
-            font-size: 2rem;
-        }
-        nav {
-            text-align: center;
-            background-color: #401B16;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        .section h2 {
-            color: #fff;
-        }
-        .menu-list, .chef-intro, .contact-info {
-            list-style-type: none;
-            padding: 0;
-        }
-        .menu-list li, .chef-intro li, .contact-info li {
-            background-color: rgba(26, 28, 30, 0.9);
-            margin-bottom: 5px;
-            padding: 10px;
-            border-left: 5px solid #fff;
-        }
-        footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Hyd Spice Kitchen - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        Welcome to Hyd Spice Kitchen
-    </header>
-    
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#chef">Chef Intro</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact Us</a>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Hyd Spice Kitchen Logo" height="40">
+                Hyd Spice Kitchen
+            </a>
+            <!-- <a class="navbar-brand" href="#">Hyd Spice Kitchen</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chef">Chef Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container" id="home">
-        <h2>Introduction</h2>
-        <p>Hyd Spice Kitchen is a culinary destination renowned for its rich and diverse menu. Start your day with authentic Indian breakfast, indulge in Chinese delicacies, and relish our signature Hyderabadi Biryani.</p>
-    </div>
+    <section class="hero text-center text-white d-flex align-items-center" id="home">
+        <div class="container">
+            <h1>Experience the <span class="text-danger">Spice</span> of <em>Hyderabad</em></h1>
+            <p class="lead text-danger">Welcome to Hyd Spice Kitchen — where we bring the authentic flavors of Hyderabad to your plate.</p>
+            <!-- <a href="#menu" class="btn btn-danger mt-3">View Menu</a> -->
+        </div>
+    </section>
 
-    <div class="container" id="chef">
-        <h2>Chef Introduction</h2>
-        <ul class="chef-intro">
-            <li>Our head chef has 15 years of experience in Indian and Chinese cuisine, specializing in rich flavors and authentic spices.</li>
-        </ul>
-    </div>
+    <section class="featured-food bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2>Delicious Breakfast Options</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <img src="images/idili.jpg" class="img-fluid rounded" alt="Soft Idlis">
+                    <h4 class="mt-2">Soft and Fluffy Idlis</h4>
+                    <p>Steamed to perfection, served with chutney and sambar.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/dosa.webp" class="img-fluid rounded" alt="Crispy Dosas">
+                    <h4 class="mt-2">Crispy Golden Dosas</h4>
+                    <p>Golden brown dosas with delightful chutneys.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/puri.jpg" class="img-fluid rounded" alt="Fluffy Pooris">
+                    <h4 class="mt-2">Fluffy and Delicious Pooris</h4>
+                    <p>Served hot with potato curry and chutneys.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/paratha.webp" class="img-fluid rounded" alt="Wholesome Parathas">
+                    <h4 class="mt-2">Wholesome Parathas</h4>
+                    <p>Stuffed with flavors, perfect with curd and pickle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container" id="menu">
-        <h2>Menu</h2>
-        <ul class="menu-list">
-            <li>Idly - ₹30</li>
-            <li>Wada - ₹35</li>
-            <li>Idly / Wada Combo - ₹35</li>
-            <li>Bonda - ₹30</li>
-        </ul>
-    </div>
+    <section class="specials py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="text-dark">Experience the <span class="text-danger">Authentic Flavors</span> of our Biryani Specials</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/chicken_biryani.webp" class="img-fluid rounded" alt="Chicken Biryani">
+                    <h4 class="mt-2">Hyderabadi Chicken Biryani</h4>
+                    <p>Perfectly cooked basmati rice with tender chicken pieces.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/fish_biryani.webp" class="img-fluid rounded" alt="Mutton Biryani">
+                    <h4 class="mt-2">Mouthwatering Fish Biryani</h4>
+                    <p>Rich flavors of spiced mutton layered with fragrant rice.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/veg_biryani.webp" class="img-fluid rounded" alt="Vegetable Biryani">
+                    <h4 class="mt-2">Delightful Vegetable Biryani</h4>
+                    <p>Aromatic basmati rice loaded with fresh veggies and spices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <ul class="contact-info">
-            <li>Email: contact@hydspicekitchen.com</li>
-            <li>Phone: +91 98765 43210</li>
-            <li>Location: Opposite DTDC Courier, Hyderabad</li>
-        </ul>
-    </div>
+    <section class="our-story py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2>Our Story and Values</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h4>Our History</h4>
+                    <p>Rooted in tradition, our journey began with a passion for authentic flavors and rich culinary heritage.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Our Mission</h4>
+                    <p>To deliver high-quality dishes that celebrate Hyderabad's rich cuisine while creating unforgettable dining experiences.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Our Values</h4>
+                    <p>We prioritize quality, authenticity, and customer satisfaction, ensuring each meal is a delightful experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        &copy; 2025 Hyd Spice Kitchen | All Rights Reserved
-    </footer>
+    <section class="gallery py-5 text-center">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/combined1.webp" class="img-fluid rounded" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/combined2.webp" class="img-fluid rounded" alt="Gallery Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/combined3.webp" class="img-fluid rounded" alt="Gallery Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-5 bg-dark text-white text-center" id="contact">
+        <div class="container">
+            <h2>Contact Hyd Spice Kitchen</h2>
+            <p>We'd love to hear from you! Reach out for inquiries or reservations.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Visit Us</h4>
+                    <p>Find us at Hyderabad, Telangana, India.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Call Us</h4>
+                    <p>For reservations, call us at +91 79938 35299.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
