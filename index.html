@@ -38,30 +38,56 @@
         </div>
     </section>
 
-    <section class="featured-food bg-dark text-white py-5">
+    <section class="featured-food py-5">
         <div class="container text-center">
-            <h2>Delicious Breakfast Options</h2>
-            <div class="row mt-4">
+            <h2 class="section-title">Our Delicious Starters</h2>
+            <p class="section-subtitle">Indulge in our mouthwatering Veg & Chicken Starters</p>
+            <div class="row">
+    
+                <!-- Paneer Tikka -->
                 <div class="col-md-3">
-                    <img src="images/idili.jpg" class="img-fluid rounded" alt="Soft Idlis">
-                    <h4 class="mt-2">Soft and Fluffy Idlis</h4>
-                    <p>Steamed to perfection, served with chutney and sambar.</p>
+                    <div class="card food-card">
+                        <img src="images/Starters.png" class="card-img-top" alt="Paneer Tikka">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Tikka</h5>
+                            <p class="card-text">Grilled cottage cheese cubes marinated in spicy yogurt.</p>
+                        </div>
+                    </div>
                 </div>
+    
+                <!-- Veg Manchurian -->
                 <div class="col-md-3">
-                    <img src="images/dosa.webp" class="img-fluid rounded" alt="Crispy Dosas">
-                    <h4 class="mt-2">Crispy Golden Dosas</h4>
-                    <p>Golden brown dosas with delightful chutneys.</p>
+                    <div class="card food-card">
+                        <img src="images/Starters1.png" class="card-img-top" alt="Veg Manchurian">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Manchurian</h5>
+                            <p class="card-text">Crispy veggie balls tossed in tangy Indo-Chinese sauce.</p>
+                        </div>
+                    </div>
                 </div>
+    
+                <!-- Chicken 65 -->
                 <div class="col-md-3">
-                    <img src="images/puri.jpg" class="img-fluid rounded" alt="Fluffy Pooris">
-                    <h4 class="mt-2">Fluffy and Delicious Pooris</h4>
-                    <p>Served hot with potato curry and chutneys.</p>
+                    <div class="card food-card">
+                        <img src="images/Starters2.png" class="card-img-top" alt="Chicken 65">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken 65</h5>
+                            <p class="card-text">Spicy deep-fried chicken with red chili and curry leaves.</p>
+                        </div>
+                    </div>
                 </div>
+    
+                <!-- Tandoori Chicken -->
                 <div class="col-md-3">
-                    <img src="images/bonda.webp" class="img-fluid rounded" alt="Wholesome Bonda">
-                    <h4 class="mt-2">Wholesome Bonda</h4>
-                    <p>Stuffed with flavors, perfect with curd and pickle.</p>
+                    <div class="card food-card">
+                        <img src="images/Starters3.png" class="card-img-top" alt="Tandoori Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Tandoori Chicken</h5>
+                            <p class="card-text">Clay oven-roasted chicken with smoky, spicy flavors.</p>
+                        </div>
+                    </div>
                 </div>
+    
             </div>
         </div>
     </section>
@@ -88,7 +114,15 @@
             </div>
         </div>
     </section>
-  
+    <section class="google-reviews-section">
+        <div class="container">
+            <h2 class="text-center">What Our Customers Say</h2>
+            <div data-romw-token="tdb3O5INrho9MeZZdNFa8UO7wU1Sj7uK4j1VaqHvuS7noqLvBV"></div>
+            <script src="https://reviewsonmywebsite.com/js/v2/embed.js?id=8ed8fd45a2fd062872f56952886c1ec5" type="text/javascript"></script>
+        </div>
+    </section>
+    
+    
     <section class="our-story py-5 bg-dark text-white text-center">
         <div class="container">
             <h2>Our Story and Values</h2>
@@ -144,7 +178,21 @@
             </div>
         </div>
     </section>
+    <div data-romw-token="gOrKuXEyOgtwXPOw28TRLpTdAJXZIyKLyfKrQsuxT0t9HqFpAY"></div>
+<script src="https://reviewsonmywebsite.com/js/v2/embed.js?id=8ed8fd45a2fd062872f56952886c1ec5" type="text/javascript"></script>
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Hyd Spice Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="scripts.js"></script>
+
+    <!-- JavaScript to dynamically update the year -->
+<script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
